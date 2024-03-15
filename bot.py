@@ -13,7 +13,7 @@ from aiogram.types import ReplyKeyboardRemove, \
     ReplyKeyboardMarkup, KeyboardButton, \
     InlineKeyboardMarkup, InlineKeyboardButton
 import but
-TOKEN = "5751694717:AAEkmL0Os01qZgbqCJ_K8i7USDMXUgfQe5g"
+TOKEN = " TOKEN "
 
 button_hi = KeyboardButton('🙍‍♂️Личный кабинет🙍‍♂️')
 button_hi2 = KeyboardButton('💵Пополнить💵')
