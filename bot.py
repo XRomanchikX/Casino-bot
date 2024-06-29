@@ -41,8 +41,6 @@ dice5_6 = KeyboardButton('5-6')
 play = KeyboardButton("Играть🎮")
 
 pr = ReplyKeyboardMarkup(resize_keyboard=True).add(button_prov).add(button_hi)
-global p2p
-p2p = QiwiP2P(auth_key='eyJ2ZXJzaW9uIjoiUDJQIiwiZGF0YSI6eyJwYXlpbl9tZXJjaGFudF9zaXRlX3VpZCI6IjVzNnhodC0wMCIsInVzZXJfaWQiOiI3OTUyOTM5MzI5OSIsInNlY3JldCI6ImU1NmQ3Nzc1OTZjY2QyNmRjY2YzOGM0N2NjNjk3YTFjMTMxYTNiZWM1NTNiNzE4ZTlmZDA5OWMyYWYxMGQxNGIifX0=')
 global kv
 kv = ReplyKeyboardMarkup(resize_keyboard=True).add(play).add(button_hi)
 global gr
@@ -52,9 +50,6 @@ dice = ReplyKeyboardMarkup(resize_keyboard=True).row(dice1_3, dice4_6).row(dice1
 
 db = sqlite3.connect('account.db')
 sql = db.cursor()
-
-token = "e34362c1d0f1413097f05596053a56ff"
-phone = "+79513747922"
 
 def find(idbv, num:int):
     resul = sql.execute(f"Select * from users where userid = ({idbv})")
